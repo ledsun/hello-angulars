@@ -1,0 +1,6 @@
+# compiled output
+angular/dist
+
+# dependencies
+angular/node_modules
+
