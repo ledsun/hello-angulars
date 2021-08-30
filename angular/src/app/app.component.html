@@ -2,11 +2,15 @@
   <span>{{ remaining() }} of {{ todos.length }} remaining</span>
   [<a href="" (click)="archive($event)">archive</a>]
   <ul>
-    <li *ngFor="let todo of todos;">
+    <li *ngFor="let todo of todos">
       <label>
         <input type="checkbox" [(ngModel)]="todo.done">
         <span>{{ todo.text }}</span>
       </label>
-    </li>  
+    </li>
   </ul>
+  <form (submit)="addTodo()">
+    <input type="text" [(ngModel)]="todoText" name="todoText" size="30" placeholder="add new todo here">
+    <input type="submit" value="add">
+  </form>
 </div>

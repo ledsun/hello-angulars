@@ -10,6 +10,7 @@ export class AppComponent {
     { text: 'learn AngularJS', done: true },
     { text: 'build an AngularJS app', done: false }
   ]
+  todoText = ''
 
   remaining() {
     var count = 0
@@ -27,6 +28,11 @@ export class AppComponent {
     }
 
     event.preventDefault()
+  }
+
+  addTodo() {
+    this.todos.push({ text: this.todoText, done: false })
+    this.todoText = ""
   }
 
 }
