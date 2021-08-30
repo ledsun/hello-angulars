@@ -3,7 +3,7 @@
 AngularJSとAngularの違いを検証します。
 AngularJSとAngularを使った極力シンプルなアプリケーションで比較します。
 
-https://angularjs.org/ の `The Basics` を題材にします。
+https://angularjs.org/ の `Add Some Control` を題材にします。
 
 ## AngularJS
 
