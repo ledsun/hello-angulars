@@ -18,4 +18,15 @@ export class AppComponent {
     }
     return count
   }
+
+  archive(event: MouseEvent) {
+    var oldTodos = this.todos
+    this.todos = []
+    for (const todo of oldTodos) {
+      if (!todo.done) this.todos.push(todo)
+    }
+
+    event.preventDefault()
+  }
+
 }
