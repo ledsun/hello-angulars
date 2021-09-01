@@ -27,3 +27,5 @@ angular.module('todoApp', [])
             })
         }
     })
+
+angular.bootstrap(document.body, ['todoApp']);
