@@ -11,7 +11,7 @@ import { UpgradeModule } from '@angular/upgrade/static';
 export class AppModule {
   constructor(private upgrade: UpgradeModule) { }
   ngDoBootstrap() {
-    this.upgrade.bootstrap(document.body, ['todoApp']);
+    this.upgrade.bootstrap(document.body);
   }
 }
 
