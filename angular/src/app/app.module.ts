@@ -1,15 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { UpgradeModule } from '@angular/upgrade/static';
-import { HeroDetailComponent } from './hero-detail.component';
-import { downgradeComponent, getAngularJSGlobal } from '@angular/upgrade/static';
-
-const angular = getAngularJSGlobal()
-angular.module('todoApp')
-  .directive(
-    'heroDetail',
-    downgradeComponent({ component: HeroDetailComponent })
-  );
 
 @NgModule({
   imports: [
