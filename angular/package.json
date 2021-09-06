@@ -2,10 +2,7 @@
   "name": "my-app",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "esbuild src/main.ts --bundle --outfile=dist/main.js",
-    "watch": "ng build --watch --configuration development"
+    "build": "esbuild src/main.ts --bundle --outfile=dist/main.js"
   },
   "private": true,
   "dependencies": {
