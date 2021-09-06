@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "esbuild src/main.ts --bundle --outfile=dist/main.js",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
@@ -27,6 +27,7 @@
     "@angular/cli": "~12.2.2",
     "@angular/compiler-cli": "~12.2.0",
     "@types/node": "^12.11.1",
+    "esbuild": "^0.12.25",
     "typescript": "~4.3.5"
   }
 }
