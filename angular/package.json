@@ -2,8 +2,7 @@
   "name": "my-app",
   "version": "0.0.0",
   "scripts": {
-    "build": "npx ngc --project tsconfig.app.json && esbuild out-tsc/app/main.js --bundle --outfile=dist/main.js",
-    "watch": "esbuild src/main.ts --bundle --outfile=dist/main.js --watch"
+    "build": "ngcc --tsconfig .tsconfig.app.json && ngc --project tsconfig.app.json && esbuild out-tsc/app/main.js --bundle --outfile=dist/main.js"
   },
   "private": true,
   "dependencies": {
