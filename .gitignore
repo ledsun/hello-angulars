@@ -1,6 +1,6 @@
 # compiled output
 angular/dist
-angular/out-tsc/app
+angular/out-tsc
 
 # dependencies
 angular/node_modules
