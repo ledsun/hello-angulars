@@ -3,7 +3,7 @@
 ```sh
 npm install
 npm run build
-python -m http.server
+npm start
 ```
 
 http://localhost:8000 で起動します。
