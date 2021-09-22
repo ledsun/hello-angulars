@@ -2,7 +2,8 @@
   "name": "my-app",
   "version": "0.0.0",
   "scripts": {
-    "build": "ngcc --tsconfig .tsconfig.app.json && ngc --project tsconfig.app.json && esbuild out-tsc/app/main.js --bundle --outfile=dist/main.js"
+    "build": "ngcc --tsconfig .tsconfig.app.json && ngc --project tsconfig.app.json && esbuild out-tsc/app/main.js --bundle --outfile=dist/main.js",
+    "start": "python -m http.server"
   },
   "private": true,
   "dependencies": {
